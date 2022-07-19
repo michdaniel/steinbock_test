@@ -2,7 +2,7 @@
 #!/bin/bash
 
 shopt -s expand_aliases
-alias steinbock="docker run -v /mnt/bbdqbm/Data/20220707_Ican_p2_v07:/data -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.Xauthority:/home/steinbock/.Xauthority:ro -u $(id -u):$(id -g) -e DISPLAY ghcr.io/bodenmillergroup/steinbock:0.13.5"
+alias steinbock="docker run -v /mnt/bbdqbm/micdan/Data/20220707_Ican_p2_v07:/data -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.Xauthority:/home/steinbock/.Xauthority:ro -u $(id -u):$(id -g) -e DISPLAY ghcr.io/bodenmillergroup/steinbock:0.13.5"
 
 mkdir /mnt/bbdqbm/micdan/Data/20220707_Ican_p2_v07/log/
 steinbock preprocess imc panel --namecol Target
